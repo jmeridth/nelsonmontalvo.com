@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Nelson Montalvo Memorial Website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="description" content="Nelson Montalvo Memorium">
+    <meta name="keywords" content="Nelson Montalvo, Funeral, San Antonio, Memorium">
+    <%= stylesheet_link_tag "nelsonmontalvo", :media => "all" %>
+</head>
+
+<body>
+<div align="center">
+    <div id="main">
+        <% if flash[:notice] -%>
+            <div id="notice"><%= flash[:notice] %></div>
+        <% end -%>
+        <%= yield :layout%>
+    </div>
+</div>
+</body>
+</html>

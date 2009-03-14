@@ -1,0 +1,2 @@
+module MemoriumHelper
+end
