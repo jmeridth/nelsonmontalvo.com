@@ -10,5 +10,9 @@ class MemoriumController < ApplicationController
 
   def picture
   end
+  
+  def blog
+    @comments = Comment.find(:all, :order => :sort_order)
+  end
 
 end

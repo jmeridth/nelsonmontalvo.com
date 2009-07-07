@@ -15,13 +15,15 @@
         <% end -%>
         <%= yield :layout%>
 		<div class="links">
-			<a href="/home">Home</a><br/>
-	        <a href="https://www.givedirect.org/give/givefrm.asp?CID=1013" target="_blank">Donate to Humane Society, SPCA of Bexar County</a><br/>
-	        <a href="/last_picture">Last Picture</a><br/>
-	        <a href="http://memorialblog.nelsonmontalvo.com" target="_blank">Memorial Blog Entry</a><br/>
-	        <a href="http://www.mysanantonio.com/obituaries/Montalvo_was_moving_up_in_technology_industry_before_fatal_auto_accident.html" target="_blank">Obituary</a><br/>
-	        <a href="funeral">Viewing & Funeral Information</a><br/>
-	    </div>
+			<ul>
+				<li><%= link_to 'Home', '/home' %></li>
+				<li><%= link_to 'Donate to Humane Society, SPCA of Bexar County', 'https://www.givedirect.org/give/givefrm.asp?CID=1013', :target => "_blank" %></li>
+				<li><%= link_to 'Last Picture', '/last_picture' %></li>
+				<li><%= link_to 'Memorial Blog Entry', '/blog' %></li>
+				<li><%= link_to 'Obituary', '/obituary'  %></li>
+				<li><%= link_to 'Viewing & Funeral Information', '/funeral' %></li>
+			</ul>		
+		</div>
     </div>
 </div>
 </body>
