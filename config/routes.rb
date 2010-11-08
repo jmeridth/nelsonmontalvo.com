@@ -1,11 +1,9 @@
-ActionController::Routing::Routes.draw do |map|
-  map.connect '', :controller => 'memorium', :action => 'index'
-  map.connect 'home', :controller => 'memorium', :action => 'index'
-  map.connect 'last_picture', :controller => 'memorium', :action => 'picture'
-  map.connect 'funeral', :controller => 'memorium', :action => 'funeral'
-  map.connect 'blog', :controller => 'memorium', :action => 'blog'
-  map.connect 'obituary', :controller => 'memorium', :action => 'obituary'
-  
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+Nelsonmontalvo::Application.routes.draw do
+  match '' => 'memorium#index'
+  match 'home' => 'memorium#index'
+  match 'last_picture' => 'memorium#picture'
+  match 'funeral' => 'memorium#funeral'
+  match 'blog' => 'memorium#blog'
+  match 'obituary' => 'memorium#obituary'
+  match '/:controller(/:action(/:id))'
 end

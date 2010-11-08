@@ -12,7 +12,7 @@ class MemoriumController < ApplicationController
   end
   
   def blog
-    @comments = Comment.find(:all, :order => :sort_order)
+    @comments = Comment.all(:order => :sort_order)
   end
 
 end
