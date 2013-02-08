@@ -1,0 +1,37 @@
+require 'rubygems'
+require 'bundler'
+require 'sinatra'
+require 'haml'
+
+get '/' do
+  haml :index
+end
+
+get '/lastpicture' do
+  haml :lastpicture
+end
+
+get '/blog' do
+  send_file 'views/blog.html'
+end
+
+get '/obituary' do
+  haml :obituary
+end
+
+get '/funeral' do
+  haml :funeral
+end
+
+get '/count' do
+  haml :count
+end
+
+not_found do
+  haml :error
+end
+
+error do
+  haml :error
+end
+
