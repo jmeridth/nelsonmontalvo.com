@@ -12,7 +12,7 @@ get '/lastpicture' do
 end
 
 get '/blog' do
-  send_file 'views/blog.html'
+  haml :blog
 end
 
 get '/obituary' do
