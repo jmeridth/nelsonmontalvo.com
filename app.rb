@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler'
 require 'sinatra'
 require 'haml'
+require 'bundler/setup'
 
 get '/' do
   haml :index
