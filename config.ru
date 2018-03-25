@@ -1,8 +1,6 @@
-path = File.expand_path("../", __FILE__)
+require "bundler"
+Bundler.require
 
-require 'rubygems'
-require 'bundler'
-require 'sinatra'
-require "#{path}/app"
+require "./app.rb"
 
-run Sinatra::Application
+run Nelson

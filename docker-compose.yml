@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nelson:
+    container_name: nelson_1
+    build: .
+    ports:
+      - 9292:9292
+    volumes:
+      - .:/code

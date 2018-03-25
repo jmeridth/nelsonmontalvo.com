@@ -1,1 +1,1 @@
-sudo bundle exec unicorn -c ./unicorn.rb -E production
+web: bundle exec puma -t 5:5 -p ${PORT:-9292} -e ${RACK_ENV:-production}
