@@ -1,7 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    dotenv (2.2.1)
     haml (3.1.7)
+    newrelic_rpm (5.0.0.342)
     puma (3.11.3)
     rack (1.4.1)
     rack-protection (1.2.0)
@@ -20,11 +22,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   haml
+  newrelic_rpm
   puma
   shotgun
   sinatra
   sinatra-flash
+
+RUBY VERSION
+   ruby 2.5.0p0
 
 BUNDLED WITH
    1.16.1
