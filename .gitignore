@@ -4,3 +4,4 @@ log/*.log
 tmp/**/*
 pids/
 nohup.out
+.env

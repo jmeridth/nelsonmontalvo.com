@@ -1,11 +1,13 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    dotenv (2.7.5)
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    newrelic_rpm (6.11.0.365)
     nio4r (2.5.2)
     puma (4.3.5)
       nio4r (~> 2.0)
@@ -29,7 +31,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   haml
+  newrelic_rpm
   puma
   shotgun
   sinatra
