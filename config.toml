@@ -9,7 +9,7 @@ title = "In Memorium Nelson Montalvo 1976-2008"
     showBorder = true
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
-    profilePic = "/images/nelson_bw.jpg"
+    homepagePic = "/images/nelson_bw.jpg"
 
 [[menu.main]]
     url = "/"
