@@ -1,9 +1,14 @@
 {{ partial "header" . }}
 
 <main>
-    <div class="intro">
-        <h3>{{ .Site.Title }}</h3>
-        {{ with .Site.Params.homepagePic }}<div class="homepage-content text-justify"><img src="{{ . }}"></div>{{ end }}
+    <div>
+        <h2>{{ .Site.Title }}</h2>
+        <h5>{{ .Site.Subtitle }}</h5>
+    </div>
+    <div align="start" class="content">
+        <p>
+            <img src="{{ .Site.Params.homepagePic }}">
+        </p>
     </div>
 </main>
 

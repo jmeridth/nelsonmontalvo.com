@@ -1,7 +1,8 @@
 baseURL = "https://nelsonmontalvo.com/"
 languageCode = "en-us"
 theme = "minimal"
-title = "In Memorium Nelson Montalvo 1976-2008"
+title = "In Memorium Nelson Montalvo"
+subtitle = "1976-2008"
 
 [params]
     author = "Montalvo Family"
