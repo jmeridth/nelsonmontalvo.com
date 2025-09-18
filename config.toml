@@ -51,10 +51,10 @@ title = "In Memorium Nelson Montalvo"
 #    name = "fas fa-envelope"
 #    weight = 1
 #
-#[[menu.icon]]
-#    url = "https://github.com/username/"
-#    name = "fab fa-github"
-#    weight = 2
+[[menu.icon]]
+   url = "https://github.com/jmeridth/nelsonmontalvo.com/"
+   name = "fab fa-github"
+   weight = 1
 #
 #[[menu.icon]]
 #    url = "https://twitter.com/username/"
